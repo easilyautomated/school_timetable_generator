@@ -1,0 +1,8 @@
+id,description,actual,expected,passed,timestamp
+T2.1a,test app has TESTING set,True,True,True,2026-10-15T18:45:03.619916
+T2.1b,plain app has TESTING off,False,False,True,2026-10-15T18:45:03.620130
+T2.1c,override replaced the database path,True,True,True,2026-10-15T18:45:03.620281
+T2.1d,plain path ends with the file name,True,True,True,2026-10-15T18:45:03.620405
+T2.2,two calls return the same object,True,True,True,2026-10-15T18:45:03.621397
+T2.3,closed connection refuses queries,raised,raised,True,2026-10-15T18:45:03.622264
+T2.4,foreign_keys reports 1,1,1,True,2026-10-15T18:45:03.622823

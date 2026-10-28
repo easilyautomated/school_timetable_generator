@@ -79,5 +79,5 @@ class TestRunner:
                 writer = csv.DictWriter(f, fieldnames=["id", "description", "actual", "expected", "passed", "timestamp"])
                 writer.writeheader()
                 writer.writerows(self.results)
-        except OSError:
-            print(f"Error: Could not write to file {path}")
+        except OSError as e:
+            print(f"Error: Could not write to file {path} because of {e}.")
